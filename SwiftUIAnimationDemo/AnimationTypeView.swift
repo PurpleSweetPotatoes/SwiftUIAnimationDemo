@@ -9,46 +9,58 @@
 import SwiftUI
 
 struct AnimationTypeView: View {
+    @State var startAnimation = false
     var body: some View {
         VStack(spacing: 20) {
-            ImplicitExample()
-                .frame(maxHeight: 200)
-            ExplicitExample()
-                .frame(maxHeight: 200)
+            HStack {
+                ImplicitExample(startAnimation: $startAnimation)
+                ExplicitExample(startAnimation: $startAnimation)
+            }
+            .padding(.horizontal, 20)
+            Button {
+                print("开始动画")
+                startAnimation.toggle()
+            } label: {
+                Text("start animation")
+            }
+            Spacer()
         }
     }
 
     struct ImplicitExample: View {
-        @State var isScale: Bool = true
-        @State var needAlpha: Bool = true
+        @State var isNormal: Bool = true
+        @Binding var startAnimation: Bool
         var body: some View {
-            Image("header")
-                .scaleEffect(isScale ? 1 : 0.6)
-                .animation(.default, value: isScale)
-                .opacity(needAlpha ? 1 : 0.6)
-            Button {
-                isScale.toggle()
-                needAlpha.toggle()
-            } label: {
-                Text("implicit animation")
+            VStack {
+                Image("header")
+                    .resizable()
+                    .scaledToFit()
+                    .scaleEffect(isNormal ? 1 : 0.6)
+                    .animation(.default, value: isNormal)
+                Text("implicit")
+            }
+            .onChange(of: startAnimation) { newValue in
+                isNormal.toggle()
             }
         }
     }
 
     struct ExplicitExample: View {
-        @State var isScale: Bool = true
-        @State var needAlpha: Bool = true
+        @State var isNormal: Bool = true
+        @Binding var startAnimation: Bool
         var body: some View {
-            Image("header")
-                .scaleEffect(isScale ? 1 : 0.6)
-                .opacity(needAlpha ? 1 : 0.6)
-            Button {
+            VStack {
+                Image("header")
+                    .resizable()
+                    .scaledToFit()
+                    .opacity(<#T##opacity: Double##Double#>)
+                    .scaleEffect(isNormal ? 1 : 0.6)
+                Text("explicit")
+            }
+            .onChange(of: startAnimation) { newValue in
                 withAnimation {
-                    isScale.toggle()
-                    needAlpha.toggle()
+                    isNormal.toggle()
                 }
-            } label: {
-                Text("explicit animation")
             }
         }
     }
