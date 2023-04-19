@@ -11,6 +11,7 @@ import SwiftUI
 enum HomeListDataType: String, CaseIterable, Identifiable {
     case type = "AnimationTypeView"
     case normal = "NormalAnimationView"
+    case animationCase = "AnimationCaseView"
     case matched = "MatchedAnimationView"
     case polygon = "PolygonAnimationView"
     case skewed = "SkewedOffsetView"
@@ -25,6 +26,8 @@ enum HomeListDataType: String, CaseIterable, Identifiable {
             return AnyView(AnimationTypeView())
         case .normal:
             return AnyView(NormalAnimationView())
+        case .animationCase:
+            return AnyView(AnimationCaseView())
         case .polygon:
             return AnyView(PolygonAnimationView())
         case .matched:
@@ -44,6 +47,8 @@ enum HomeListDataType: String, CaseIterable, Identifiable {
             return "The difference between explicit and implicit"
         case .normal:
             return "how use animation with a view"
+        case .animationCase:
+            return "the animation case test"
         case .polygon:
             return "how can animation work by custom"
         case .matched:

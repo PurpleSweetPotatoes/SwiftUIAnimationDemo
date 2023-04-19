@@ -22,6 +22,7 @@
 		F53741FC29E3990B00064386 /* HikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53741F629E3990B00064386 /* HikeView.swift */; };
 		F53741FE29E3993B00064386 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53741FD29E3993B00064386 /* Hike.swift */; };
 		F56AA72129E0124C00D63B40 /* SkewedOffsetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56AA72029E0124B00D63B40 /* SkewedOffsetView.swift */; };
+		F5742DA729EBDE8200226A03 /* AnimationCaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5742DA629EBDE8200226A03 /* AnimationCaseView.swift */; };
 		F5AB49D229DFB74E004A70B9 /* PolygonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AB49D129DFB74E004A70B9 /* PolygonAnimationView.swift */; };
 		F5B07C6D29DECC65008CF5E1 /* TimeLineAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B07C6C29DECC65008CF5E1 /* TimeLineAnimationView.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		F53741F629E3990B00064386 /* HikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HikeView.swift; sourceTree = "<group>"; };
 		F53741FD29E3993B00064386 /* Hike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hike.swift; sourceTree = "<group>"; };
 		F56AA72029E0124B00D63B40 /* SkewedOffsetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkewedOffsetView.swift; sourceTree = "<group>"; };
+		F5742DA629EBDE8200226A03 /* AnimationCaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCaseView.swift; sourceTree = "<group>"; };
 		F5AB49D129DFB74E004A70B9 /* PolygonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PolygonAnimationView.swift; sourceTree = "<group>"; };
 		F5B07C6C29DECC65008CF5E1 /* TimeLineAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +83,7 @@
 				F520362F29DE5EC500804BAC /* SwiftUIAnimationDemoApp.swift */,
 				F517D57929E2AFBC0017306B /* AnimationTypeView.swift */,
 				F520363D29DE5F3300804BAC /* NormalAnimationView.swift */,
+				F5742DA629EBDE8200226A03 /* AnimationCaseView.swift */,
 				F56AA72029E0124B00D63B40 /* SkewedOffsetView.swift */,
 				F520363F29DE5F4C00804BAC /* MatchedAnimationView.swift */,
 				F5B07C6C29DECC65008CF5E1 /* TimeLineAnimationView.swift */,
@@ -188,6 +191,7 @@
 				F5AB49D229DFB74E004A70B9 /* PolygonAnimationView.swift in Sources */,
 				F520363229DE5EC500804BAC /* ContentView.swift in Sources */,
 				F56AA72129E0124C00D63B40 /* SkewedOffsetView.swift in Sources */,
+				F5742DA729EBDE8200226A03 /* AnimationCaseView.swift in Sources */,
 				F53741F829E3990B00064386 /* HikeGraph.swift in Sources */,
 				F5B07C6D29DECC65008CF5E1 /* TimeLineAnimationView.swift in Sources */,
 				F53741FB29E3990B00064386 /* ModelData.swift in Sources */,

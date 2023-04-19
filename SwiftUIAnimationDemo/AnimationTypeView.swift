@@ -53,7 +53,6 @@ struct AnimationTypeView: View {
                 Image("header")
                     .resizable()
                     .scaledToFit()
-                    .opacity(<#T##opacity: Double##Double#>)
                     .scaleEffect(isNormal ? 1 : 0.6)
                 Text("explicit")
             }
